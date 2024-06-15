@@ -1,0 +1,185 @@
+body{
+    margin: 0;
+    background-color:cadetblue;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+header{
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    background-color: gold;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+}
+
+.Logo{
+    display: flex;
+    align-items: center;
+}
+
+.Logo img{
+    width: 70px;
+    height: 70px;
+    margin-right: 30px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 10px;
+
+}
+
+nav a:hover{
+    color: white;
+}
+
+@media (max-width:700px){
+    header{
+        flex-direction: column;
+
+    }
+
+    nav{
+        padding: 10px 0px;
+    }
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    padding: 40px
+}
+
+.slogan{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    
+    text-align: center;
+    margin: 10px;
+}
+
+.registro{
+    color: white;
+}
+
+
+
+.principal{
+
+    color: black;
+    text-align:center;
+    margin: 10px;
+    font-size: 40px;
+    
+} 
+
+.img2{
+    justify-content: right;
+}
+
+nav{
+    margin: 20px;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+.ul1{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.ul1 > li > a{
+    display: block;
+    padding: 20px 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.ul1 > li:hover{
+    background-color: red;
+
+}
+
+.menu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    background-color: rgb(0, 0, 0, .5);
+
+}
+
+.ul1 li:hover .menu{
+display: block;
+width: auto;
+}
+
+.menu li:hover{
+background-color: gold;
+height: auto;
+
+}
+
+.menu li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 25px 25px 25px 25px;
+}
+
+.slider-frame{
+    width: 400px;
+    height: 600px;
+    margin: 50px auto 0;
+    overflow: hidden;
+   
+    
+}
+
+.slider-frame ul {
+    display:flex;
+    padding: 0;
+    width: 400%; 
+    animation: slide 16s infinite alternate ease-in-out;
+    
+}
+
+.slider-frame li {
+    width: 100%;
+    list-style: none;
+    
+    
+}
+
+.slider-frame img {
+    width: 100%;
+    margin-top: auto;
+    height: auto;
+}
+
+@keyframes slide {
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    95%{margin-left: -300%;}
+}
+
+
+
+
+
